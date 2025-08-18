@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>photography</title>
+  <link rel="stylesheet" href="./css/stylee.css">
+</head>
+<body>
+
+  <!-- NAVBAR -->
+  <nav class="navbar">
+    <div class="logo">photography</div>
+
+    <!-- Hamburger menu (checkbox hack) -->
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">&#9776;</label>
+
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#about">about us</a></li>
+      <li><a href="#services">servics</a></li>
+      <li><a href="#gallery">gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- BANNER -->
+  <section class="banner">
+    <div class="banner-content">
+      <h1>kittu photography</h1>
+      <p>Your journey begins here. Discover amazing photography today.</p>
+      
+    </div>
+  </section>
+  <!-- ABOUT US -->
+  <section id="about" class="about">
+    <div class="about-container">
+      <div class="about-img">
+        <img src="./images/images2.jpeg" alt="About Us">
+      </div>
+      <div class="about-text">
+        <h2>About Us</h2>
+        <p>
+          Welcome to <strong>my photography</strong>, your trusted photography partner for unforgettable happines. 
+          We provide high quality photos  with great facilities with a decent budget.
+        </p>
+        <p>
+          With our expert guides and best-in-class service, we make sure your gallery
+          are beautifull, amazing, and full of adventure. Join thousands of photography 
+          who explored the world with us. 
+        </p>
+       
+      </div>
+    </div>
+  </section>
+  <!-- SERVICES -->
+<section id="services" class="services">
+  <h2>Our Services</h2>
+  <div class="services-cards">
+    <div class="service-card">
+      <img src="./images/art image.jpeg" alt="art photography">
+      <h3>art photography</h3>
+      <p>Artists have used photography in numerous ways to express their inner feelings.</p>
+    </div>
+    <div class="service-card">
+      <img src="./images/fashion.jpeg" alt="fashion photography">
+      <h3>fashion photography</h3>
+      <p>My unique fashion sense is my favourite way to sparkle and shine.</p>
+    </div>
+    <div class="service-card">
+      <img src="./images/wildlife.jpeg" alt="wildlife photography">
+      <h3>wildlife photography</h3>
+      <p>In wildlife photography you never take picture you always ask for a picture.</p>
+    </div>
+  </div>
+</section>
+<!-- GALLERY -->.
+<section id="gallery" class="gallery">
+  <h2>Gallery</h2>
+  <div class="gallery-grid">
+    <div class="gallery-item">
+      <img src="./images/art image.jpeg" alt="" onclick="openPopup(this)">
+      <p><strong>art photography</strong> is the creative expression of ideas and emotions.</p>
+    </div>
+    <div class="photography-item">
+      <img src="./images/wild2.jpeg" alt="" onclick="openPopup(this)">
+      <p><strong>wildlife photography</strong> capture animals the beauty and rawness of nature</p>
+    </div>
+    <div class="gallery-item">
+      <img src="./images/fashion.jpeg" alt="" onclick="openPopup(this)">
+      <p><strong>fashion</strong> is a style through artistic and visually striking imagery</p>
+    </div>
+    <div class="gallery-item">
+      <img src="./images/wedding.jpeg" alt="" onclick="openPopup(this)">
+      <p><strong>wedding</strong> presense the love,emotions,and special moments of a couple's big day through timeless images. </p>
+    </div>
+    <div class="gallery-item">
+      <img src="./images/birthday.jpeg" alt="" onclick="openPopup(this)">
+      <p><strong>birthday</strong> capture joyful moments and celebrations.</p>
+    </div>
+    <div class="gallery-item">
+      <img src="./images/events.jpeg" alt="" onclick="openPopup(this)">
+      <p><strong>event</strong> memorible occasion and gatherings.</p>
+    </div>
+  </div>
+
+  <!-- Popup container -->
+  <div id="popup" class="popup" onclick="closePopup()">
+    <span class="close">&times;</span>
+    <img id="popup-img" src="" alt="Popup Image">
+    <p id="popup-caption"></p>
+  </div>
+</section>
+<!-- CONTACT -->
+<section id="contact" class="contact">
+  <h2>Contact Us</h2>
+  <div class="contact-info">
+    <div class="contact-item">
+      <h3>Email</h3>
+      <p><a href="mailto:info@travelnow.com">kittuphotography@gmail.com</a></p>
+    </div>
+    <div class="contact-item">
+      <h3>Phone</h3>
+      <p><a href="tel:+912345678900">+91-2345678900</a></p>
+    </div>
+    <div class="contact-item">
+      <h3>Main Branch</h3>
+      <p>abc street,Andhra Pradesh,India</p>
+    </div>
+    <div class="contact-item">
+      <h3>Other Branches</h3>
+      <ul>
+        <li> a street ,hyderbad, India </li>
+        <li>b street ,Bangalore, India</li>
+        <li>c street ,chennai,India</li>
+      </ul>
+    </div>
+  </div>
+  <div class="contact-form">
+    <h3>Send us a Message</h3>
+    <form>
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="3" placeholder="Your Message" required></textarea>
+      <button type="submit">Send</button>
+    </form>
+  </div>
+</section>
+</body>
+</html>
